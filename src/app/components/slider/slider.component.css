@@ -1,0 +1,112 @@
+.carousel_container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  background-color: #fbf8f1;
+  position: relative;
+  overflow: hidden;
+}
+.carousel_container_content {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+}
+.carousel_arrowleft {
+  width: 50px;
+  height: 50px;
+  background-color: #f7ecde;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.carousel_arrowright {
+  width: 50px;
+  height: 50px;
+  background-color: #f7ecde;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.carousel_slide {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.image_container {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+.image_container img {
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel_info_container {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel_container_container.image-active {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel_info_title {
+  font-size: 50px;
+}
+.carousel_info_desc {
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.carousel_info_button {
+  color: #fff;
+  font-size: 14px;
+  background: #54bab9;
+  display: inline-block;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-family: Poppins;
+  border-radius: 5px;
+}
+.carousel_info_button:hover {
+  color: #323332;
+  letter-spacing: 4px;
+}

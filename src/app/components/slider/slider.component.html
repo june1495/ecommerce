@@ -1,0 +1,24 @@
+<div *ngIf="images && images.length > 0" class="carousel_container">
+  <div class="carousel_arrowleft">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+  <div class="carousel_container_content">
+    <div class="carousel_slide" *ngFor="let image of images; let i = index">
+      <div class="image_container">
+        <img
+          [src]="image.img"
+          [alt]="image.title"
+          [ngClass]="{ 'image-active': selectedIndex === i }"
+        />
+      </div>
+      <div class="carousel_info_container">
+        <h1 class="carousel_info_title">{{ image.title }}</h1>
+        <p class="carousel_info_desc">{{ image.desc }}</p>
+        <button type="button" class="carousel_info_button">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <div class="carousel_arrowright">
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
